@@ -22,6 +22,11 @@ img {
 /* TYPOGRAPHY */
 
 
+/* MAIN */
+main {
+    display: flex;
+}
+
 /* NAV */
 .nav-sidebar {
     width: 60px;
@@ -32,8 +37,32 @@ img {
     background-color: lightblue;
 }
 
-/* MAIN */
+/* MAIN-SECTION */
+.main-section {
+    width: calc(100% - 60px);
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+}
 
+.topbar-section {
+    width: 100%;
+    height: 100px;
+
+    /* debug */
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
+}
+
+.content-section {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    /* debug */
+    border: 1px solid black;
+    background-color: lightgreen;
+}
 
 /* FOOTER */
 
