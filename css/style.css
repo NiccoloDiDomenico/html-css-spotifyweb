@@ -23,7 +23,14 @@ img {
 
 
 /* NAV */
+.nav-sidebar {
+    width: 60px;
+    height: calc(100vh - 80px);
 
+    /* debug */
+    border: 1px solid black;
+    background-color: lightblue;
+}
 
 /* MAIN */
 
