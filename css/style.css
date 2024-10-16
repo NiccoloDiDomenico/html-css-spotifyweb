@@ -12,7 +12,7 @@ img {
 /* UTILITY */
 :root {
     --topbar-height: 80px;
-    --navbar-width: 60px;
+    --navbar-width: 50px;
     --footer-height: 80px;
 }
 
@@ -35,10 +35,22 @@ ul {
 
 
 /* LAYOUT */
+.container {
+    width: 90%;
+    max-width: 475px;
+    margin: 0 auto;
+
+    /* debug */
+    /* border: 1px solid white; */
+    /* background-color: lightcoral; */
+    /* min-height: 500px; */
+}
 
 
 /* TYPOGRAPHY */
-
+body {
+    color: white;
+}
 
 /* MAIN */
 main {
@@ -213,14 +225,84 @@ main {
 /* CONTENT */
 .content-section {
     height: 100%;
+    background-color: #141922;
     overflow: auto;
     padding-top: var(--topbar-height);
 
     /* debug */
-    border: 1px solid black;
-    background-color: lightgreen;
+    /* border: 1px solid black; */
 }
 
+/* FILTER */
+.filter {
+    margin: 20px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px
+}
+
+.filter-list li {
+    width: calc(100%/2);
+    text-align: center;
+    font-size: small;
+}
+
+/* /FILTER */
+
+/* RECENTLY PLAYED */
+.content-title {
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+
+.content-subtitle {
+    font-size: small;
+    color: #a3a3a3;
+    padding-left: 10px;
+}
+
+.grid-row {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 10px;
+}
+
+.col {
+    width: calc(90%/2);
+
+    /* debug */
+    /* background-color: aqua; */
+    /* min-height: 350px; */
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.card-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.song {
+    color: white;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: small;
+}
+
+/* /RECENTLY PLAYED */
 /* /CONTENT */
 /* /MAIN-SECTION */
 
@@ -228,10 +310,10 @@ main {
 /* FOOTER */
 .playback-bar {
     height: var(--footer-height);
+    background-color: #282828;
 
     /* debug */
-    border: 1px solid black;
-    background-color: lightpink;
+    /* border: 1px solid black; */
 }
 
 /* /FOOTER */
