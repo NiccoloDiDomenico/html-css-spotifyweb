@@ -62,6 +62,13 @@
         background-color: #a3a3a3;
         margin: 5px 0;
     }
+
+    /* MAIN SECTION */
+    /* TOP BAR */
+    .upgrade.btn {
+        padding: 10px 30px;
+        font-size: 13px;
+    }
 }
 
 
