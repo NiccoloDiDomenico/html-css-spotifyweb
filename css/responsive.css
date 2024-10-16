@@ -2,39 +2,92 @@
 
 /* TABLET MINI */
 @media screen and (min-width: 425px) {
+
     /* UTILITY */
     :root {
-        --navbar-width: 180px;
-        
-    /* debug */
-    border: 1px solid black;
-    background-color: lightblue;
-}
-}
+        --navbar-width: 200px;
 
+        /* debug */
+        border: 1px solid black;
+        background-color: lightblue;
+    }
+
+    /* NAV */
+    /* LOGO */
+    #logo-small {
+        display: none;
+    }
+
+    #logo-large {
+        display: inline-block;
+    }
+
+    /* MENU */
+    .menu div {
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    .menu a {
+        display: inline;
+    }
+
+    /* PLAYLIST */
+    .playlist {
+        flex-grow: 1;
+        padding-left: 20px;
+        display: inline-block;
+    }
+
+    /* DOWNLOAD AND PROFILE */
+    .bottom-sidebar {
+        align-items: start;
+        padding-left: 20px;
+    }
+
+    .bottom-sidebar a {
+        display: inline-block;
+    }
+
+    .bottom-sidebar hr {
+        display: inline-block;
+        width: 90%
+    }
+
+    #profile-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        vertical-align: middle;
+        background-color: #a3a3a3;
+        margin: 5px 0;
+    }
+}
 
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+
     /* UTILITY */
     :root {
         --navbar-width: 200px;
-    
-    /* debug */
-    border: 1px solid black;
-    background-color: lightblue;
-}    
+
+        /* debug */
+        border: 1px solid black;
+        background-color: lightblue;
+    }
 }
 
 
 /* LAPTOP */
 @media screen and (min-width: 1024px) {
+
     /* UTILITY */
     :root {
-        --navbar-width: 220px;
-            
-    /* debug */
-    border: 1px solid black;
-    background-color: lightblue;
-}       
+        --navbar-width: 200px;
+
+        /* debug */
+        border: 1px solid black;
+        background-color: lightblue;
+    }
 }
