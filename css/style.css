@@ -49,6 +49,7 @@ ul {
 
 /* TYPOGRAPHY */
 body {
+    font-family: sans-serif;
     color: white;
 }
 
@@ -234,16 +235,13 @@ main {
 }
 
 /* FILTER */
-.filter {
-    margin: 20px;
-}
-
 .filter-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 10px
+    row-gap: 10px;
+    margin: 20px 0;
 }
 
 .filter-list li {
@@ -257,13 +255,11 @@ main {
 /* RECENTLY PLAYED */
 .content-title {
     font-size: 1.3rem;
-    padding-left: 10px;
 }
 
 .content-subtitle {
     font-size: small;
     color: #a3a3a3;
-    padding-left: 10px;
 }
 
 .grid-row {
