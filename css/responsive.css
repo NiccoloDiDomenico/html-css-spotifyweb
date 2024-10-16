@@ -1,12 +1,11 @@
 /* RESPONSIVE */
 
 /* TABLET MINI */
-@media screen and (min-width: 425px) and (max-width: 768px) {
-    /* NAV */
-    .nav-sidebar {
-    width: 180px;
-    height: calc(100vh - 80px);
-
+@media screen and (min-width: 425px) {
+    /* UTILITY */
+    :root {
+        --navbar-width: 180px;
+        
     /* debug */
     border: 1px solid black;
     background-color: lightblue;
@@ -14,12 +13,12 @@
 }
 
 
+
 /* TABLET */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* NAV */
-    .nav-sidebar {
-    width: 200px;
-    height: calc(100vh - 80px);
+@media screen and (min-width: 768px) {
+    /* UTILITY */
+    :root {
+        --navbar-width: 200px;
     
     /* debug */
     border: 1px solid black;
@@ -30,10 +29,9 @@
 
 /* LAPTOP */
 @media screen and (min-width: 1024px) {
-    /* NAV */
-    .nav-sidebar {
-    width: 200px;
-    height: calc(100vh - 80px);
+    /* UTILITY */
+    :root {
+        --navbar-width: 220px;
             
     /* debug */
     border: 1px solid black;
