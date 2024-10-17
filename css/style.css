@@ -120,6 +120,19 @@ main {
     display: none;
 }
 
+.home {
+    position: relative;
+}
+
+.menu .special.line {
+    width: 3px;
+    height: 30px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* /MENU */
 
 /* PLAYLIST */
@@ -237,13 +250,24 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 10px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .filter-list li {
     width: calc(100%/2);
     text-align: center;
     font-size: small;
+    position: relative;
+}
+
+.filter-list .special.line {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* /FILTER */
@@ -280,6 +304,25 @@ main {
     border-radius: 50%;
 }
 
+.card-img {
+    position: relative;
+}
+
+.overlay-playsong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+
 .card-text {
     text-align: center;
     margin: 10px 0;
@@ -311,13 +354,32 @@ main {
 /* /FOOTER */
 
 
-/* HOVER */
-.like:hover {
-    color: red;
+
+/* /HOVER */
+/* NAV */
+nav:hover a {
+    color: #ffffff;
+    transition: white 0.3s ease;
 }
 
-.card:hover .back-item {
+/* TOP BAR */
+.upgrade.btn:hover {
+    transform: scale(1.1);
+
+    /* debug */
+    background-color: lightblue;
+}
+
+/* MAIN-CONTENT */
+.card-img:hover .overlay-playsong {
     z-index: 1;
 }
 
-/* /HOVER */
+.card-img:hover .overlay-playsong.circle {
+    z-index: 1;
+}
+
+.filter-list:hover a {
+    color: #ffffff;
+    transition: white 0.3s ease;
+}
