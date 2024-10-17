@@ -12,7 +12,7 @@ img {
 /* UTILITY */
 :root {
     --topbar-height: 80px;
-    --navbar-width: 50px;
+    --navbar-width: 60px;
     --footer-height: 80px;
 }
 
@@ -343,15 +343,75 @@ main {
 
 
 /* FOOTER */
+
+
+/* PLAYBACK BAR */
 .playback-bar {
+    width: 100%;
     height: var(--footer-height);
     background-color: #282828;
-
-    /* debug */
-    /* border: 1px solid black; */
+    display: flex;
 }
 
+/* START */
+.playback-bar .start {
+    width: 30%;
+    height: var(--footer-height);
+
+    /* debug */
+    /* background-color: lightgreen; */
+}
+
+/* CURRENTLY PLAYING */
+.currently-playing {
+    height: var(--footer-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.currently-song {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.currently-song-cover {
+    width: 2.5rem;
+    margin: 5px;
+}
+
+.currently-song-text {
+    font-size: small;
+}
+
+/* ICON */
+.icon {
+    width: 20%;
+}
+
+/* CENTER */
+.playback-bar .center {
+    width: 40%;
+    height: var(--footer-height);
+
+    /* debug */
+    background-color: lightcoral;
+}
+
+/* END */
+.playback-bar .end {
+    width: 30%;
+    height: var(--footer-height);
+
+    /* debug */
+    background-color: lightblue;
+}
+
+/* /PLAYBACK BAR */
 /* /FOOTER */
+
 
 
 
