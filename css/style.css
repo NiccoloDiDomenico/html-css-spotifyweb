@@ -473,16 +473,53 @@ main {
 .playback-bar .end {
     width: 30%;
     height: var(--footer-height);
+    position: relative;
 
     /* debug */
     /* background-color: lightblue; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+.volume-bar {
+    position: relative;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.line-volume {
+    width: 100px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #a3a3a3;
+}
+
+.line-volume-active {
+    position: absolute;
+    top: 38px;
+    left: 70px;
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: yellowgreen;
+    z-index: -1;
+}
+
+.line-volume-active-circle {
+    position: absolute;
+    top: 34px;
+    left: 100px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: -1;
 }
 
 /* /PLAYBACK BAR */
 /* /FOOTER */
-
-
 
 
 /* /HOVER */
@@ -514,13 +551,11 @@ nav li:hover a {
     z-index: 1;
 }
 
-
 /* FOOTER */
 /* START */
 .currently-playing .icon:hover a {
     color: white;
 }
-
 
 /* CENTER */
 .playbar-line:hover .line-active {
@@ -528,5 +563,18 @@ nav li:hover a {
 }
 
 .playbar-line:hover .line-active-circle {
+    z-index: 1;
+}
+
+/* END */
+.volume-bar:hover .fa-solid {
+    color: white;
+}
+
+.volume-bar:hover .line-volume-active {
+    z-index: 1;
+}
+
+.volume-bar:hover .line-volume-active-circle {
     z-index: 1;
 }
