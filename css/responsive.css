@@ -114,8 +114,17 @@
     }
 
     /* CENTER */
+    .playbar-line {
+        width: 90%;
+    }
 
+    .line-active {
+        left: 45px;
+    }
 
+    .line-active-circle {
+        left: 75px;
+    }
 
     /* END */
 
@@ -154,6 +163,22 @@
     .col {
         width: calc(90%/4);
     }
+
+    /* FOOTER */
+    /* CENTER */
+    .playbar-line {
+        width: 80%;
+    }
+
+    .line-active {
+        left: 50px;
+    }
+
+    .line-active-circle {
+        left: 120px;
+    }
+
+
 }
 
 
@@ -187,4 +212,20 @@
     .col {
         width: calc(90%/6);
     }
+
+    /* FOOTER */
+    /* CENTER */
+    .playbar-line {
+        width: 70%;
+    }
+
+    .line-active {
+        left: 105px;
+    }
+
+    .line-active-circle {
+        left: 240px;
+    }
+
+
 }
