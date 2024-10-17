@@ -450,20 +450,22 @@ main {
 
 .line-active {
     position: absolute;
-    left: 40px;
+    left: 20%;
     width: 20%;
     height: 5px;
     border-radius: 50px;
-    background-color: #ffffff;
+    background-color: yellowgreen;
+    z-index: -1;
 }
 
 .line-active-circle {
     position: absolute;
-    left: 75px;
+    left: 80px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #ffffff;
+    z-index: -1;
 }
 
 
@@ -485,7 +487,7 @@ main {
 
 /* /HOVER */
 /* NAV */
-nav:hover a {
+nav li:hover a {
     color: #ffffff;
     transition: white 0.3s ease;
 }
@@ -499,6 +501,11 @@ nav:hover a {
 }
 
 /* MAIN-CONTENT */
+.filter-list li:hover a {
+    color: #ffffff;
+    transition: white 0.3s ease;
+}
+
 .card-img:hover .overlay-playsong {
     z-index: 1;
 }
@@ -507,7 +514,19 @@ nav:hover a {
     z-index: 1;
 }
 
-.filter-list:hover a {
-    color: #ffffff;
-    transition: white 0.3s ease;
+
+/* FOOTER */
+/* START */
+.currently-playing .icon:hover a {
+    color: white;
+}
+
+
+/* CENTER */
+.playbar-line:hover .line-active {
+    z-index: 1;
+}
+
+.playbar-line:hover .line-active-circle {
+    z-index: 1;
 }
